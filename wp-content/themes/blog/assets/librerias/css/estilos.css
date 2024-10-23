@@ -1,0 +1,167 @@
+
+.fondo {
+    position: relative;
+   /* Altura del contenedor al 100% del viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Color del texto sobre la imagen, ajusta según sea necesario */
+    
+
+}
+
+.fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(https://jediazg.laboratoriodiseno.cl/wp-content/uploads/2023/12/entrada.jpg); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    filter: brightness(70%) blur(4px); /* Ajusta el valor de blur según sea necesario */
+    
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del contenedor */
+}
+.titulo{
+    background-color: #788585;
+    font-family: 'Caudex', serif;
+    color: #38302E;
+}
+
+.swiper {
+    width: 100%;
+    height: 250px;
+  }
+
+.prueba{
+    background-color: #1a1919;;
+    background-size: cover;
+    
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.texto{
+    background-color: #c1b29f;
+    border-radius: 15px;
+    color: white;
+    filter: opacity(0.1);
+}
+.texto:hover{
+  filter: opacity(1);
+  transition-duration: 0.5s;
+}
+.resultado{
+    background-color: #c1b29f;
+    border-radius: 0px 0px 15px 15px;
+}
+.borde1{
+    border-radius: 15px 15px 0px 0px;
+}
+.semana1{
+    color: #1a1919;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quei{
+    color: #1a1919;
+
+}
+.footer-final{
+    background-color:#7B2D26 ;
+    height: 25px;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.has-medium-font-size{
+  color: #1a1919;
+  margin-top: 3px;
+}
+.has-small-font-size{
+ padding-left: 0.5%;
+ padding-right: 0.5%;
+ padding-bottom: 1%;
+}
+
+
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+.botonr{
+  width: 150px;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    #D5573B 10.8%,
+    #885053 94.3%
+  );
+  transition: all 0.475s;
+}
+
+
+
+
+
+
+
+.focus-in-contract {
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* keyframes */
+@-webkit-keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract {
+    0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
